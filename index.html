@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Water Conservation Wasn't in the Job Description</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+    
+</head>
+
+<body>
+    <div id = "changeOrientation"><h1>Please change the orientation.</h1></div>
+    <div id = "sliceDIV"></div>
+    <div id = "sliceGame"></div>
+    <div class="modal fade" id="myModal" role="dialog" data-backdrop="static">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <div class="modal-dialog" id="promptBox">
+      <div class="modal-content" id="promptBoxContent">
+        <div class="modal-header">
+          <h4 class="modal-title">Enter your name:</h4>
+        </div>
+        <div class="modal-body" id="promptBoxBody">
+          <input id="userNameInput" type="text">
+            <h7 id="nameBlank"><br/>Name cannot be blank</h7>
+        </div>
+        <div class="modal-footer">
+          <button id = "ok" type="button" class="btn btn-success">Ok</button>
+          <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="nameCancel()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div id='sinkGameWater'></div>
+    <div id="sinkGame">
+        <p id="text2"></p>
+        <p id="timer">Time: 20</p>
+        <img id="tap1" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+        <img id="tap2" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+        <img id="tap3" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+        <img id="tap4" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+        <img id="tap5" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+        <img id="tap6" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+        <img id="tap7" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+        <img id="tap8" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+        <img id="tap9" class="tap" src="./images/minigame2/faucet.png" alt="tap">
+    </div>
+
+    <div id="overlay"></div>
+    <div id="easterEggOverlay"></div>
+    <img id="next" class='next' src="./images/icons/next.png" alt="next">
+    <p id="text1">Zzzzzz......Zzzzzz......Zzzzzz......</p>
+    <img id="richard" class="characterImgCenter" src="./images/characters/richard/richardBlack.png">
+    <img id="tommy" class="characterImgCenter" src="./images/characters/tommy/normalTommy.png">
+    <img id="olivia" class="characterImgCenter" src="./images/characters/chef/chefBlack.png">
+    <img id="richardRight" class="characterImgRight" src="./images/characters/richard/normalRichard.png">
+    <img id="tommyLeft" class="characterImgLeft" src="./images/characters/tommy/normalTommy.png">
+    <img id="lilyRight" class="characterImgRight" src="./images/characters/gardener/normalLily.png">
+    <img id="nozzleIcon" class="icons" src="./images/icons/hose.png">
+    <img id="grassIcon" class="icons" src="./images/icons/grass.png">
+    <img id="springIcon" class="icons" src="./images/icons/sprinkler.png">
+    <img id="broomIcon" class="icons" src="./images/icons/broom.png">
+    <img id="rinseIcon" class="icons2" src="./images/icons/rinsing.png">
+    <img id="defrostingIcon" class="icons2" src="./images/icons/defrosting.png">
+    <img id="dishwasherIcon" class="icons2" src="./images/icons/dishwasher.png">
+    <img id="washingIcon" class="icons2" src="./images/icons/washing.png">
+    <img id="showerIcon" class="icons2" src="./images/icons/shower.png">
+    <div id='beginningPage'>
+    </div>
+    <div id="divID">
+        <script type="text/JavaScript" src="https://www.kayak.com/affiliate/widget-v2.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <div id="firstDiv">
+            <img src="./images/Title.png" id="title" alt="title">
+            <button id="startButton" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Play</button>
+            <div id="widgetContainer" style="width: 500px; height: 500px;">
+                <script src="./js/kayak.js"></script>
+            </div>
+        </div>
+        <button id="kayakButton" type="button" value="Toggle Blind">Find Hotel</button>
+    </div>
+    <div id="raindropDIV">
+        <div id="raindropGame">
+            <img id="nextInGame" class="next" src="./images/next.png" alt="next">
+        </div>
+    </div>
+    
+    <img src="./images/icons/sound.png" id="sound" class="manageSound">
+
+
+
+</body>
+
+</html>
